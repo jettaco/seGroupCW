@@ -1,9 +1,9 @@
 const electron = require('electron')
-const { app, BrowserWindow } = require('electron')
-
+const { app, BrowserWindow, ipcMain } = require('electron')
+var win;
 function createWindow () {
   // Create the browser window.
-  let win = new BrowserWindow({
+  win = new BrowserWindow({
     width: 800,
     height: 600,
     webPreferences: {
@@ -11,8 +11,16 @@ function createWindow () {
     }
   })
 
-  
-  win.loadFile('index.html')
+
+  win.loadFile('setup.html')
 }
+
+ipcMain.on("getPlayers", function(e, args){
+  console.log("Received player details from startup")
+  win.loadFile('game.html')
+  win.webContents.on('did-finish-load', () => {
+  win.webContents.send("sendPlayersInitGame", args)
+});
+})
 
 app.whenReady().then(createWindow)

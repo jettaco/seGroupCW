@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <!--- <link type"text/css" href="./mainWindow.css" rel="stylesheet"> --->
+      <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+      <script>if (window.module) module = window.module;</script>
+
+    <title>Walton Games</title>
+  </head>
+  <body>
+    <div>
+      <label for="numOfPlayersSelector">Choose Number of Players</label>
+      <select id="numOfPlayersSelector">
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
+
+      <div class="player1">
+        <input class="playerNames" type="text" id="player1Name" placeholder="player1">
+        <label for="player1Name">Player 1 Name</label>
+        <div class="playerTokenOpts" id="p1TokenChoose">
+          <input type="radio" id="p1t1" name="p1t" value="boot">
+          <label for="p1t1">Boot</label>
+          <input type="radio" id="p1t2" name="p1t" value="smartphone">
+          <label for="p1t2">Smartphone</label>
+          <input type="radio" id="p1t3" name="p1t" value="goblet">
+          <label for="p1t3">Goblet</label>
+          <input type="radio" id="p1t4" name="p1t" value="hatstand">
+          <label for="p1t4">Hatstand</label>
+          <input type="radio" id="p1t5" name="p1t" value="cat">
+          <label for="p1t5">Cat</label>
+          <input type="radio" id="p1t6" name="p1t" value="spoon">
+          <label for="p1t6">Spoon</label>
+        </div>
+      </div>
+      <div class="player2">
+        <input class="playerNames" type="text" id="player2Name" placeholder="player2">
+        <label for="player2Name">Player 2 Name</label>
+        <div class="playerTokenOpts" id="p2TokenChoose">
+          <input type="radio" id="p2t1" name="p2t" value="boot">
+          <label for="p2t1">Boot</label>
+          <input type="radio" id="p2t2" name="p2t" value="smartphone">
+          <label for="p2t2">Smartphone</label>
+          <input type="radio" id="p2t3" name="p2t" value="goblet">
+          <label for="p2t3">Goblet</label>
+          <input type="radio" id="p2t4" name="p2t" value="hatstand">
+          <label for="p2t4">Hatstand</label>
+          <input type="radio" id="p2t5" name="p2t" value="cat">
+          <label for="p2t5">Cat</label>
+          <input type="radio" id="p2t6" name="p2t" value="spoon">
+          <label for="p2t6">Spoon</label>
+        </div>
+      </div>
+      <div class="player3" hidden="true">
+        <input class="playerNames" type="text" id="player3Name" placeholder="player3">
+        <label for="player3Name">Player 3 Name</label>
+        <div class="playerTokenOpts" id="p3TokenChoose">
+          <input type="radio" id="p3t1" name="p3t" value="boot">
+          <label for="p3t1">Boot</label>
+          <input type="radio" id="p3t2" name="p3t" value="smartphone">
+          <label for="p3t2">Smartphone</label>
+          <input type="radio" id="p3t3" name="p3t" value="goblet">
+          <label for="p3t3">Goblet</label>
+          <input type="radio" id="p3t4" name="p3t" value="hatstand">
+          <label for="p3t4">Hatstand</label>
+          <input type="radio" id="p3t5" name="p3t" value="cat">
+          <label for="p3t5">Cat</label>
+          <input type="radio" id="p3t6" name="p3t" value="spoon">
+          <label for="p3t6">Spoon</label>
+        </div>
+      </div>
+      <div class="player4" hidden="true">
+        <input class="playerNames" type="text" id="player4Name" placeholder="player4">
+        <label for="player4Name">Player 4 Name</label>
+        <div class="playerTokenOpts" id="p4TokenChoose">
+          <input type="radio" id="p4t1" name="p4t" value="boot">
+          <label for="p4t1">Boot</label>
+          <input type="radio" id="p4t2" name="p4t" value="smartphone">
+          <label for="p4t2">Smartphone</label>
+          <input type="radio" id="p4t3" name="p4t" value="goblet">
+          <label for="p4t3">Goblet</label>
+          <input type="radio" id="p4t4" name="p4t" value="hatstand">
+          <label for="p4t4">Hatstand</label>
+          <input type="radio" id="p4t5" name="p4t" value="cat">
+          <label for="p4t5">Cat</label>
+          <input type="radio" id="p4t6" name="p4t" value="spoon">
+          <label for="p4t6">Spoon</label>
+        </div>
+      </div>
+      <div class="player5" hidden="true">
+        <input class="playerNames" type="text" id="player5Name" placeholder="player5">
+        <label for="player5Name">Player 5 Name</label>
+        <div class="playerTokenOpts" id="p5TokenChoose">
+          <input type="radio" id="p5t1" name="p5t" value="boot">
+          <label for="p5t1">Boot</label>
+          <input type="radio" id="p5t2" name="p5t" value="smartphone">
+          <label for="p5t2">Smartphone</label>
+          <input type="radio" id="p5t3" name="p5t" value="goblet">
+          <label for="p5t3">Goblet</label>
+          <input type="radio" id="p5t4" name="p5t" value="hatstand">
+          <label for="p5t4">Hatstand</label>
+          <input type="radio" id="p5t5" name="p5t" value="cat">
+          <label for="p5t5">Cat</label>
+          <input type="radio" id="p5t6" name="p5t" value="spoon">
+          <label for="p5t6">Spoon</label>
+        </div>
+      </div>
+      <div class="player6" hidden="true">
+        <input class="playerNames" type="text" id="player6Name" placeholder="player6">
+        <label for="player6Name">Player 6 Name</label>
+        <div class="playerTokenOpts" id="p6TokenChoose">
+          <input type="radio" id="p6t1" name="p6t" value="boot">
+          <label for="p6t1">Boot</label>
+          <input type="radio" id="p6t2" name="p6t" value="smartphone">
+          <label for="p6t2">Smartphone</label>
+          <input type="radio" id="p6t3" name="p6t" value="goblet">
+          <label for="p6t3">Goblet</label>
+          <input type="radio" id="p6t4" name="p6t" value="hatstand">
+          <label for="p6t4">Hatstand</label>
+          <input type="radio" id="p6t5" name="p6t" value="cat">
+          <label for="p6t5">Cat</label>
+          <input type="radio" id="p6t6" name="p6t" value="spoon">
+          <label for="p6t6">Spoon</label>
+        </div>
+      </div>
+    </div>
+    <button id="startGameBtn">Start Game</button>
+  </body>
+  <script type="text/javascript" src="setupController.js"></script>
+  

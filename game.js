@@ -1,3 +1,16 @@
+const electron = require('electron');
+const {ipcRenderer} = require('electron');
+ipcRenderer.on("sendPlayersInitGame", function(e, args){
+  console.log("Received request from main process to start")
+  console.log(args)
+  let playersList = document.getElementById("playerNamesVisual")
+  for (let i=0; i< args.length; i++){
+    let listEl = document.createElement("LI")
+    listEl.innerText = args[i].Name
+    playersList.append(listEl)
+  }
+  //Create players from json object 'args' here
+})
 class Board {
   tiles = [];
   players = []
